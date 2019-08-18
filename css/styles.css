@@ -1,0 +1,106 @@
+/* html.cover-page header {
+  background-color: #ad8f71;
+} */
+
+body {
+  color: #302921;
+  display: grid;
+  font-family: 'Noto Sans', 'Noto Sans CJK SC', sans-serif;
+  font-size: 1rem;
+  max-width: 50em;
+  margin: auto;
+}
+
+h1 {
+  color: #bc262c;
+  font-size: 3.583rem;
+}
+
+h1 span {
+  color:  #821b20;
+  display: block;
+  font-size: 2.986rem;
+}
+
+.cover-page header {
+  display: grid;
+  height: 100vh;
+}
+.cover-page header h1 {
+  color: #302921;
+}
+
+header a:link,
+header a:visited,
+header a:hover,
+header a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+.icon-banyan-city {
+  width: 200px;
+  height: auto;
+}
+
+.icon-stamp {
+  width: 50px;
+  height: auto;
+}
+
+.moon {
+  background-color: #ffecd9;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  
+}
+
+h2 {
+  font-size: 2.986rem;
+}
+
+h3 {
+  font-size: 2.488rem;
+}
+
+h4 {
+  font-size: 2.074rem;
+}
+
+h5 {
+  font-size: 1.728rem;
+}
+
+h6 {
+  font-size: 1.44rem;
+}
+
+p {
+  font-size: 1.2rem;	
+  line-height: 1.4;
+}
+
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-size: 1.2rem;	
+  line-height: 1.4;
+}
+
+a:link {
+  color: #821b20;
+}
+
+li + li {
+  margin-top: 1em;
+}
+
+img {
+  object-fit: contain;
+  max-width: 100%;
+}

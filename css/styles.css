@@ -110,13 +110,7 @@ nav {
 }
 
 main {
-  column-count: 2;
-  gap: 2vw;
   grid-column: 3 / 6;
-}
-
-main h1 {
-  column-span: all;
 }
 
 footer {
@@ -162,7 +156,7 @@ ol {
 }
 
 li {
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-medium);
   line-height: var(--line-height-text);
 }
 

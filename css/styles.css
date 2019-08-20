@@ -2,32 +2,108 @@
   background-color: #ad8f71;
 } */
 
+:root {
+  --font-family: "Noto Sans", "Noto Sans CJK SC", sans-serif;
+  --font-weight: 400;
+  --font-weight-bold: 700;
+  --text-scale: 1.2;
+  --font-size-x-display: 4.3rem;
+  --font-size-display: 3.583rem;
+  --font-size-xxx-large: 2.986rem;
+  --font-size-xx-large: 2.488rem;
+  --font-size-x-large: 2.074rem;
+  --font-size-large: 1.728rem;
+  --font-size-medium: 1.2rem;
+  --font-size: 1rem;
+  --font-size-small: 0.833rem;
+  --line-height-text: 1.4;
+  --line-height-heading: 1;
+
+  --color-background: #fff;
+  --color-background-selection: #ffecd9;
+  --color-text-default: #302921;
+  --color-text-alt: #fff;
+  --color-accent: #bc262c;
+  --color-accent-darker: #821b20;
+  --color-base: #302921;
+  --border-color: #302921;
+
+  --grid-column-gap: 2vw;
+  --grid-row-gap: 4vh;
+  --max-width: 84rem;
+  --spacing-xx-small: 0.25rem;
+  --spacing-x-small: 0.5rem;
+  --spacing-small: 0.75rem;
+  --spacing: 1rem;
+  --spacing-medium: 1.5rem;
+  --spacing-large: 2rem;
+  --spacing-x-large: 4rem;
+  --spacing-xx-large: 8rem;
+  --duration-default: 0.25s;
+
+  /* Type scale 8:9 major second scale 1.125
+  --font-size-xxx-display: 4.11rem;
+  --font-size-xx-display: 3.653rem;
+  --font-size-xx-display: 3.247rem;
+  --font-size-x-display: 2.887rem;
+  --font-size-display: 2.566rem;
+  --font-size-xxxx-large: 2.281rem;
+  --font-size-xxx-large: 2.027rem;
+  --font-size-xx-large: 1.802rem;
+  --font-size-x-large: 1.602rem;
+  --font-size-large: 1.424rem;
+  --font-size-medium: 1.125rem;
+  --font-size: 1rem;
+  --font-size-small: 0.889rem;
+  --font-size-x-small: 0.79rem; */
+
+  --border-radius-circle: 50%;
+  --border-width: 1px;
+  --border-width-thick: 3px;
+  --border-style-thin: var(--border-width) solid var(--border-color);
+  --border-style-thick: var(--border-width-thick) solid var(--border-color);
+
+  --max-width: 90rem;
+  --spacing-x-small: 0.25rem;
+  --spacing-small: 0.5rem;
+  --spacing: 0.75rem;
+  --spacing: 1rem;
+  --spacing-medium: 1.5rem;
+  --spacing-large: 2rem;
+  --spacing-x-large: 4rem;
+}
+
 body {
-  color: #302921;
+  color: var(--color-text-default);
   display: grid;
-  font-family: 'Noto Sans', 'Noto Sans CJK SC', sans-serif;
-  font-size: 1rem;
-  max-width: 50em;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
   margin: auto;
+  max-width: 50em;
 }
 
 h1 {
-  color: #bc262c;
-  font-size: 3.583rem;
+  color: var(--color-accent);
+  font-size: var(--font-size-x-display);
 }
 
 h1 span {
-  color:  #821b20;
+  color: var(--color-accent-darker);
   display: block;
-  font-size: 2.986rem;
+  font-size: var(--font-size-xxx-large);
 }
 
 .cover-page header {
   display: grid;
   height: 100vh;
 }
+
 .cover-page header h1 {
-  color: #302921;
+  color: var(--color-text-default);
+}
+
+a:link {
+  color: var(--color-accent);
 }
 
 header a:link,
@@ -39,46 +115,45 @@ header a:focus {
 }
 
 .icon-banyan-city {
-  width: 200px;
   height: auto;
+  width: 200px;
 }
 
 .icon-stamp {
-  width: 50px;
   height: auto;
+  width: 50px;
 }
 
 .moon {
-  background-color: #ffecd9;
-  border-radius: 50%;
+  background-color: var(--color-background-selection);
+  border-radius: var(--border-radius-circle);
   height: 200px;
   width: 200px;
-  
 }
 
 h2 {
-  font-size: 2.986rem;
+  font-size: var(--font-size-xxx-large);
 }
 
 h3 {
-  font-size: 2.488rem;
+  font-size: var(--font-size-xx-large);
 }
 
 h4 {
-  font-size: 2.074rem;
+  font-size: var(--font-size-x-large);
 }
 
 h5 {
-  font-size: 1.728rem;
+  font-size: var(--font-size-medium);
 }
 
 h6 {
-  font-size: 1.44rem;
+  font-size: var(--font-size-medium);
 }
 
 p {
-  font-size: 1.2rem;	
-  line-height: 1.4;
+  font-size: var(--font-size);
+  line-height: var(--line-height-text);
 }
 
 ol {
@@ -88,19 +163,15 @@ ol {
 }
 
 li {
-  font-size: 1.2rem;	
-  line-height: 1.4;
-}
-
-a:link {
-  color: #821b20;
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-text);
 }
 
 li + li {
-  margin-top: 1em;
+  margin-block-start: var(--spacing);
 }
 
 img {
-  object-fit: contain;
   max-width: 100%;
+  object-fit: contain;
 }

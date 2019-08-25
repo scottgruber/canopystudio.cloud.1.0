@@ -1,3 +1,5 @@
+console.log('Hello from service-worker.js');
+
 // Cache the Google Fonts stylesheets with a stale-while-revalidate strategy.
 workbox.routing.registerRoute(
   /^https:\/\/fonts\.googleapis\.com/,

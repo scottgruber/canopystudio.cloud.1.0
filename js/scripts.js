@@ -1,7 +1,14 @@
-// Check that service workers are supported
-if ('serviceWorker' in navigator) {
-  // Use the window load event to keep the page load performant
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/service-worker.js');
-  });
+if (navigator.serviceWorker) {
+ 
+  navigator.serviceWorker.register('/service-worker.js')
+ 
+  .then( function (registration) {
+    console.log('Success!', registration.scope)
+  }) 
+  .catch( function(error) {
+    console.log('Failure!', error)
+  })
+
+  console.log('All done!')
+  
 }

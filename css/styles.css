@@ -303,12 +303,29 @@ p {
 }
 
 li {
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size);
   line-height: var(--line-height-text);
 }
 
 li + li {
   margin-block-start: var(--spacing);
+}
+
+footer {
+  margin: 0;
+}
+
+footer ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+footer ul li {
+  margin: var(--spacing) var(--spacing) var(--spacing) 0;
+  font-size: var(--font-size-small);
+  
 }
 
 cite {

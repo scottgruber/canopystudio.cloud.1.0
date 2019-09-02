@@ -46,6 +46,7 @@
   --border-style-thick: var(--border-width-thick) solid var(--border-color);
 
   --max-width: 90rem;
+  --min-width: 60rem;
   --spacing-x-small: 0.25rem;
   --spacing-small: 0.5rem;
   --spacing: 0.75rem;
@@ -111,6 +112,11 @@ header.cover {
     align-self: end; */
     z-index: 1;
   }
+
+  article h1,
+  article h2 {
+    column-span: all;
+  }
   
   h1:lang(en) {
     grid-column: 2 / -1;
@@ -127,11 +133,25 @@ header.cover {
     grid-column: 2 / 6;
   }
 
-  article p {
-    columns: 18em;
+  article {
+    max-width: var(--max-width);
+    columns: 42ch;
     column-gap: 2vw;
   }
-  
+
+  article p {
+    margin: 0;
+    line-height: var(--line-height-text);
+  }
+
+  article p:last-of-type {
+    margin-block-end: var(--spacing);
+  }
+
+  article p + p {
+    text-indent: 1em;
+  }
+
   footer {
     grid-column: 2 / 8;
     grid-row: 4;

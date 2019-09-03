@@ -1,6 +1,6 @@
 :root {
   --font-family: "Noto Sans", "Noto Sans CJK SC", sans-serif;
-  --font-family-alt: serif;
+  --font-family-alt: "KaiTi", 楷体, STKaiti, 华文楷体, serif;
   --font-weight: 400;
   --font-weight-bold: 700;
   --text-scale: 1.2;
@@ -165,9 +165,14 @@ header.cover {
   article {
     max-width: var(--max-width);
     margin-block-end: var(--spacing-medium);
-    columns: 40ch;
+    column-count: 40ch;
     column-gap: 2vw;
   }
+
+  .descendants article {
+    column-count: none;
+  }
+  
 
   article p {
     margin: 0;
@@ -354,6 +359,10 @@ sub {
 
 /* =Superscripts */
 
+sup a {
+  text-decoration: none;
+}
+
 sup {
   font-feature-settings: "sups" 1;
 }
@@ -382,4 +391,36 @@ header a:hover,
 header a:focus {
   color: inherit;
   text-decoration: none;
+}
+
+/* table */
+
+table {
+  margin: var(--spacing) 0;
+}
+
+th,
+td {
+  padding: 0 var(--spacing-x-small);
+  font-family: var(--font-family);
+  font-size: var(--font-size-small);
+  text-align: start;
+  white-space: nowrap;
+  vertical-align: top;
+ 
+}
+
+thead th,
+thead td {
+  border-bottom: var(--border-width) solid var(--border-color);
+}
+
+tbody th,
+tbody td {
+  border-bottom: var(--border-width) solid var(--border-color);
+}
+
+tbody tr:last-of-type th,
+tbody tr:last-of-type td {
+  border-bottom-width: 0;
 }

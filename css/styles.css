@@ -120,6 +120,7 @@ header.cover {
     grid-column: 1;
     grid-row: 1 / -1;
     margin-block-start: var(--spacing-medium);
+    writing-mode: vertical-lr;
   }
 
   .book-title {
@@ -173,12 +174,22 @@ header.cover {
     column-count: none;
   }
   
+  .standfirst {
+    font-size: var(--font-size-medium);
+  }
+
+  .standfirst + cite {
+    margin-block-end: var(--spacing-large);
+  }
 
   article p {
     margin: 0;
     line-height: var(--line-height-text);
   }
 
+  .book-credits article p + p {
+    text-indent: 0;
+  }
 
   article p + p {
     text-indent: 1em;
@@ -207,9 +218,9 @@ h1 {
 }
 
 header h1 {
-  margin-inline-start: 0;
+  margin-block-start: 0;
+  margin-inline-start: var(--spacing-small);
   font-size: var(--font-size-large);
-  writing-mode: vertical-lr;
 }
 
 h1:lang(en) {

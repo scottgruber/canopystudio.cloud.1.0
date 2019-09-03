@@ -166,12 +166,12 @@ header.cover {
   article {
     max-width: var(--max-width);
     margin-block-end: var(--spacing-medium);
-    column-count: 40ch;
     column-gap: 2vw;
+    column-width: 40ch;
   }
 
   .descendants article {
-    column-count: none;
+    column-width: initial;
   }
   
   .standfirst {
@@ -187,10 +187,6 @@ header.cover {
     line-height: var(--line-height-text);
   }
 
-  .book-credits article p + p {
-    text-indent: 0;
-  }
-
   article p + p {
     text-indent: 1em;
   }
@@ -204,6 +200,9 @@ header.cover {
     margin-block-end: var(--spacing);
   }
 
+  .book-credits article p + p {
+    text-indent: 0;
+  }
 
   footer {
     grid-column: 2 / 8;

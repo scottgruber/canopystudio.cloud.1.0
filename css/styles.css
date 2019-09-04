@@ -81,9 +81,18 @@ body {
   margin: 0;
 }
 
+.cover {
+  /* background-color: var(--color-background-cover); */
+}
+
+
 .rong-cheng {
-  /* opacity: .5; */
+  max-height: 50vh;
   z-index: -1;
+}
+
+.rong-cheng g {
+  fill: var(--color-background-moon);
 }
 
 :not(header.cover),
@@ -112,10 +121,6 @@ header.cover {
     margin: 0;
   }
 
-  :not(.cover) {
-    grid-column: 2 / 8;
-  }
-
   header:not(.cover) {
     grid-column: 1;
     grid-row: 1 / -1;
@@ -124,19 +129,15 @@ header.cover {
   }
 
   .book-title {
-    /* grid-column: 2 / -1; */
-    /* align-self: end; */
     z-index: 1;
   }
 
   .village-painting {
-    /* grid-column: 2 / -1;
-    align-self: end; */
     z-index: 1;
   }
 
   article h1 {
-    margin-block-start: 0;
+    margin: 0;
   }
 
   article h2 {
@@ -154,13 +155,9 @@ header.cover {
     margin: 0;
   }
 
-  nav {
-    grid-column: 2 / 8;
-    grid-row: 3;
-  }
-
   main {
     grid-column: 2 / 6;
+    margin: 0;
   }
 
   article {
@@ -173,12 +170,12 @@ header.cover {
   .descendants article {
     column-width: initial;
   }
-  
+
   .standfirst {
     font-size: var(--font-size-medium);
   }
 
-  .standfirst + cite {
+  .standfirst+cite {
     margin-block-end: var(--spacing-large);
   }
 
@@ -187,7 +184,7 @@ header.cover {
     line-height: var(--line-height-text);
   }
 
-  article p + p {
+  article p+p {
     text-indent: 1em;
   }
 
@@ -196,17 +193,13 @@ header.cover {
     text-indent: 0;
   }
 
-  article p:last-of-type {
-    margin-block-end: var(--spacing);
-  }
-
-  .book-credits article p + p {
+  .book-credits article p+p {
     text-indent: 0;
   }
 
   footer {
     grid-column: 2 / 8;
-    grid-row: 4;
+    grid-row: 2;
   }
 
 }
@@ -224,14 +217,6 @@ header h1 {
 
 h1:lang(en) {
   margin: var(--spacing-small);
-}
-
-.cover {
-  background-color: var(--color-background-cover);
-}
-
-.rong-cheng g {
-  fill: var(--color-background-moon);
 }
 
 .family-seal {
@@ -322,7 +307,7 @@ li {
   line-height: var(--line-height-text);
 }
 
-li + li {
+li+li {
   margin-block-start: var(--spacing);
 }
 
@@ -340,7 +325,7 @@ footer ul {
 footer ul li {
   margin: var(--spacing) var(--spacing) var(--spacing) 0;
   font-size: var(--font-size-small);
-  
+
 }
 
 cite {
@@ -350,7 +335,7 @@ cite {
 /* =Subscripts */
 
 sub {
-  font-feature-settings: "subs" 1;
+  font-feature-settings: "subs"1;
 }
 
 @supports (font-variant-position: sub) {
@@ -360,7 +345,7 @@ sub {
   }
 }
 
-@supports ((font-variant-position: sub) or (font-feature-settings: "subs" 1)) {
+@supports ((font-variant-position: sub) or (font-feature-settings: "subs"1)) {
   sub {
     font-size: inherit;
     vertical-align: inherit;
@@ -374,7 +359,7 @@ sup a {
 }
 
 sup {
-  font-feature-settings: "sups" 1;
+  font-feature-settings: "sups"1;
 }
 
 @supports (font-variant-position: super) {
@@ -384,7 +369,7 @@ sup {
   }
 }
 
-@supports ((font-variant-position: super) or (font-feature-settings: "sups" 1)) {
+@supports ((font-variant-position: super) or (font-feature-settings: "sups"1)) {
   sup {
     font-size: inherit;
     vertical-align: inherit;
@@ -417,7 +402,7 @@ td {
   text-align: start;
   white-space: nowrap;
   vertical-align: top;
- 
+
 }
 
 thead th,

@@ -82,7 +82,7 @@ body {
 }
 
 .cover {
-  /* background-color: var(--color-background-cover); */
+  background-color: var(--color-background-cover);
 }
 
 
@@ -138,10 +138,11 @@ header.cover {
 
   article h1 {
     margin: 0;
+    margin-block-end: var(--spacing-medium);
   }
 
   article h2 {
-    margin-block-end: 0;
+    margin-block-end: var(--spacing);
   }
 
   article h1,
@@ -156,15 +157,14 @@ header.cover {
   }
 
   main {
-    grid-column: 2 / 6;
+    grid-column: 2 / 8;
     margin: 0;
   }
 
   article {
-    max-width: var(--max-width);
     margin-block-end: var(--spacing-medium);
     column-gap: 2vw;
-    column-width: 40ch;
+    column-width: 30ch;
   }
 
   .descendants article {
@@ -184,7 +184,7 @@ header.cover {
     line-height: var(--line-height-text);
   }
 
-  article p+p {
+  article p + p {
     text-indent: 1em;
   }
 
@@ -273,7 +273,7 @@ h1:lang(en) {
 
 h1 span {
   display: block;
-  font-size: var(--font-size-x-large);
+  font-size: var(--font-size-large);
   color: var(--color-accent-darker);
 }
 

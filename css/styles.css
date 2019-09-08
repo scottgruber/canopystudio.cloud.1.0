@@ -81,10 +81,6 @@ body {
   margin: 0;
 }
 
-.cover {
-  background-color: var(--color-background-cover);
-}
-
 
 .rong-cheng {
   max-height: 50vh;
@@ -161,7 +157,7 @@ header.cover {
     margin: 0;
   }
 
-  :not(.photos article) {
+  article {
     margin-block-end: var(--spacing-medium);
     column-gap: 2vw;
     column-width: 30ch;
@@ -185,7 +181,7 @@ header.cover {
     font-size: var(--font-size-medium);
   }
 
-  .standfirst+cite {
+  .standfirst + cite {
     margin-block-end: var(--spacing-large);
   }
 

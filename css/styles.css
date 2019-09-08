@@ -98,11 +98,6 @@ footer {
   margin: var(--spacing-small);
 }
 
-header.cover {
-  width: 100vw;
-  height: 100vh;
-}
-
 @media (min-width: 48em) {
 
   body {
@@ -117,17 +112,40 @@ header.cover {
     margin: 0;
   }
 
+
+  header.cover {
+    display: grid;
+    grid-template-areas:
+      "city city city photo"
+      "title title title photo"
+      ". stamp . photo";
+  }
+
+  .family-seal {
+    grid-area: stamp;
+    justify-self: end;
+    align-self: end;
+  }
+
+  .book-title {
+    grid-area: title;
+    max-width: 100%;
+    z-index: 1;
+
+  }
+
+  .cover-photo {
+    grid-area: photo;
+    object-fit: cover;
+    height: 100%;
+  }
+
+
   header:not(.cover) {
     grid-column: 1;
     grid-row: 1 / -1;
     margin-block-start: var(--spacing-medium);
     writing-mode: vertical-lr;
-  }
-
-  .book-title {
-    object-fit: cover;
-    max-width: 100%;
-    z-index: 1;
   }
 
   .village-painting {
@@ -168,10 +186,11 @@ header.cover {
 
   figure {
     width: min-content;
-    margin: auto;
+    margin: 0;
   }
-  
+
   figcaption p {
+    margin: 0;
     font-size: var(--font-size-x-small);
     color: var(--color-accent);
   }
@@ -184,7 +203,7 @@ header.cover {
     font-size: var(--font-size-medium);
   }
 
-  .standfirst + cite {
+  .standfirst+cite {
     margin-block-end: var(--spacing-large);
   }
 
@@ -202,7 +221,7 @@ header.cover {
     /* text-indent: 0; */
   }
 
-  .book-credits article p + p {
+  .book-credits article p+p {
     text-indent: 0;
   }
 
@@ -387,6 +406,15 @@ sup {
 
 a:link {
   color: var(--color-accent);
+}
+
+a:visited {
+  color: var(--color-accent-darker);
+}
+
+a:hover,
+a:focus {
+  outline: 1px dotted var(--color-background-cover);
 }
 
 header a:link,

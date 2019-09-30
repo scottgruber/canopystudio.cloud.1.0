@@ -1,3 +1,5 @@
+ErrorDocument 404 /404.html
+
 # Needed before any rewriting
 RewriteEngine On
 
@@ -89,4 +91,90 @@ RewriteRule ^summary$ /grandpa-wang/zh/summary? [R=301,NE,NC,L]
 # 301 Redirect 21
 RewriteCond %{QUERY_STRING}  ^$
 RewriteRule ^tribute$ /grandpa-wang/zh/tribute? [R=301,NE,NC,L]
+
+# 301 Redirect 22
+RewriteCond %{QUERY_STRING}  ^$
+RewriteRule ^afterword/$ /grandpa-wang/zh/afterword/? [R=301,NE,NC,L]
+
+# 301 Redirect 23
+RewriteCond %{QUERY_STRING}  ^$
+RewriteRule ^chapter1/$ /grandpa-wang/zh/chapter1/? [R=301,NE,NC,L]
+
+# 301 Redirect 24
+RewriteCond %{QUERY_STRING}  ^$
+RewriteRule ^chapter2/$ /grandpa-wang/zh/chapter2/? [R=301,NE,NC,L]
+
+# 301 Redirect 25
+RewriteCond %{QUERY_STRING}  ^$
+RewriteRule ^chapter3/$ /grandpa-wang/zh/chapter3/? [R=301,NE,NC,L]
+
+# 301 Redirect 26
+RewriteCond %{QUERY_STRING}  ^$
+RewriteRule ^chapter4/$ /grandpa-wang/zh/chapter4/? [R=301,NE,NC,L]
+
+# 301 Redirect 27
+RewriteCond %{QUERY_STRING}  ^$
+RewriteRule ^chapter5/$ /grandpa-wang/zh/chapter5/? [R=301,NE,NC,L]
+
+# 301 Redirect 28
+RewriteCond %{QUERY_STRING}  ^$
+RewriteRule ^chapter6/$ /grandpa-wang/zh/chapter6/? [R=301,NE,NC,L]
+
+# 301 Redirect 29
+RewriteCond %{QUERY_STRING}  ^$
+RewriteRule ^chapter7/$ /grandpa-wang/zh/chapter7/? [R=301,NE,NC,L]
+
+# 301 Redirect 30
+RewriteCond %{QUERY_STRING}  ^$
+RewriteRule ^chapter8/$ /grandpa-wang/zh/chapter8/? [R=301,NE,NC,L]
+
+# 301 Redirect 31
+RewriteCond %{QUERY_STRING}  ^$
+RewriteRule ^chapter9/$ /grandpa-wang/zh/chapter9/? [R=301,NE,NC,L]
+
+# 301 Redirect 32
+RewriteCond %{QUERY_STRING}  ^$
+RewriteRule ^chapter10/$ /grandpa-wang/zh/chapter10/? [R=301,NE,NC,L]
+
+# 301 Redirect 33
+RewriteCond %{QUERY_STRING}  ^$
+RewriteRule ^credits/$ /grandpa-wang/zh/credits/? [R=301,NE,NC,L]
+
+# 301 Redirect 34
+RewriteCond %{QUERY_STRING}  ^$
+RewriteRule ^descendants/$ /grandpa-wang/zh/descendants/? [R=301,NE,NC,L]
+
+# 301 Redirect 35
+RewriteCond %{QUERY_STRING}  ^$
+RewriteRule ^essays/$ /grandpa-wang/zh/essays/? [R=301,NE,NC,L]
+
+# 301 Redirect 36
+RewriteCond %{QUERY_STRING}  ^$
+RewriteRule ^foreword/$ /grandpa-wang/zh/foreword/? [R=301,NE,NC,L]
+
+# 301 Redirect 37
+RewriteCond %{QUERY_STRING}  ^$
+RewriteRule ^img/$ /grandpa-wang/zh/img/? [R=301,NE,NC,L]
+
+# 301 Redirect 38
+RewriteCond %{QUERY_STRING}  ^$
+RewriteRule ^pdf/$ /grandpa-wang/zh/pdf/? [R=301,NE,NC,L]
+
+# 301 Redirect 39
+RewriteCond %{QUERY_STRING}  ^$
+RewriteRule ^photos/$ /grandpa-wang/zh/photos/? [R=301,NE,NC,L]
+
+# 301 Redirect 40
+RewriteCond %{QUERY_STRING}  ^$
+RewriteRule ^references/$ /grandpa-wang/zh/references/? [R=301,NE,NC,L]
+
+# 301 Redirect 41
+RewriteCond %{QUERY_STRING}  ^$
+RewriteRule ^summary/$ /grandpa-wang/zh/summary/? [R=301,NE,NC,L]
+
+# 301 Redirect 42
+RewriteCond %{QUERY_STRING}  ^$
+RewriteRule ^tribute/$ /grandpa-wang/zh/tribute/? [R=301,NE,NC,L]
+
+
 

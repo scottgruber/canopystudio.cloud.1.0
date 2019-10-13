@@ -193,8 +193,14 @@ footer {
     margin-block-end: var(--spacing);
   }
 
+  figure {
+    width: min-content;
+    margin: 0;
+  }
+
   article h1,
-  article h2 {
+  article h2,
+  article figure {
     column-span: all;
   }
 
@@ -209,15 +215,33 @@ footer {
     margin: 0;
   }
 
-  article {
+  article p {
+    margin: 0;
     margin-block-end: var(--spacing-medium);
-    column-gap: 2vw;
-    column-width: 30ch;
   }
 
-  figure {
-    width: min-content;
-    margin: 0;
+  p + p {
+    text-indent: 1em;
+  } 
+
+  article {
+    margin-block-end: var(--spacing-medium);
+    /* column-gap: 2vw;
+    column-width: 30ch; */
+  }
+
+  .f-inline-start {
+    float: inline-start;
+    margin-inline-end: 1em;
+  }
+
+  .f-inline-end {
+    float: inline-end;
+    margin-inline-start: 1em;
+  }
+  
+  article figure {
+    margin-block-end: 1em;
   }
 
   figcaption p {
@@ -225,6 +249,10 @@ footer {
     font-size: var(--font-size-x-small);
     color: var(--color-accent);
   }
+
+  figcaption p + p {
+    text-indent: 0;
+  } 
 
   .descendants article {
     column-width: initial;
@@ -237,15 +265,6 @@ footer {
   .standfirst+cite {
     margin-block-end: var(--spacing-large);
   }
-
-  article p {
-    margin: 0;
-    margin-block-end: var(--spacing-medium);
-  }
-
-  p + p {
-    text-indent: 1em;
-  } 
 
   article blockquote p {
     font-family: var(--font-family-alt);

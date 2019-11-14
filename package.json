@@ -18,9 +18,9 @@
   },
   "devDependencies": {
     "stylelint": "^10.1.0",
-    "stylelint-a11y": "^1.2.1",
+    "stylelint-a11y": "^1.2.2",
     "stylelint-config-recommended": "^2.2.0",
-    "stylelint-order": "^3.1.0",
+    "stylelint-order": "^3.1.1",
     "stylelint-use-logical": "^1.1.0"
   }
 }

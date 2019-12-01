@@ -249,6 +249,12 @@ footer {
     color: var(--color-accent);
   }
 
+  blockquote p {
+    margin: 0;
+    font-family: var(--font-family-alt);
+   
+  }
+
   figcaption p + p,
   article blockquote p + p {
     text-indent: 0;
@@ -266,13 +272,7 @@ footer {
     margin-block-end: var(--spacing-large);
   }
 
-  blockquote p {
-    font-family: var(--font-family-alt);
-    margin: 0;
-  }
-
-
-
+  
   .book-credits article p:first-of-type {
     text-indent: 0;
   }
